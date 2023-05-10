@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar Doctores{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-title">Doctores Encontrados</div>
+        <br>
+        <div class="card3">
+            <div class="card"> 
+            {% for customuser in object_list %}
+                    <div class="card-header"> 
+                        <span class="font-weight-bold"><a href="{% url 'edit' customuser.pk %}"><h4>Usuario: {{ customuser.username }}</h4></a></span>
+                    </div> 
+                    <div class="card-body">
+                        <p>Apellido: {{ customuser.apellido }}</p>
+                        <br />
+                        <a class="button3" href="{% url 'delete' customuser.pk %}" style="text-decoration: none; color: blanchedalmond;">Borrar</a>
+                        <br>
+                    </div>
+            {% endfor %}
+        </div>
+        </div>
+        <br><a class="button4" style="text-decoration: none;" href="{% url 'users' %}" role="button">Regresar</a></br>
+    </div>
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container2">
+        <div id="mtoast" onclick="this.style.display='none'" hidden></div>
+        <div class="brand-logo-pacientes"></div>
+        <div class="brand-title">Carga de archivos</div>
+        <div class="inputs">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="button2" onclick="mtoast('Analizando pdf')" type="submit">Subir Archivos </button>
+                <script>
+                    function mtoast (msg) {
+                        var toast = document.getElementById("mtoast");
+                        toast.innerHTML = msg;
+                        toast.hidden = false
+                    }
+                </script>    
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+
+{% endblock content %} 

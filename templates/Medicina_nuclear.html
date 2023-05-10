@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Medicina Nuclear{% endblock title %}
+
+{% block content %}
+<div class="container2">
+    <div class="card">
+      <div class="brand-title2">Medicina nuclear</div>
+        {% for object in medicina_nuclear_list %}
+          <div class="card2">     
+              <h2 class="a3"><b>NSS: {{ object.nss }}</b></h2> 
+              <p class="a3" >Folio orden: {{ object.folio_orden }}</p>
+              <p class="a3">Determinación: {{ object.determinacion}}</p>
+              <p class="a3">Resultado: {{ object.resultado}}</p>
+              <p class="a3">Unidad: {{ object.unidad}}</p>
+              <p class="a3">Valor normal: {{ object.valor_normal }}</p>
+              </div>
+              <br>
+              <div class="wrapper" >
+                <a class="button3" href="{% url 'editMedicina_nuclear' object.nss object.folio_orden object.determinacion %}" role="button">Editar</a>
+                <a class="button3" href="{% url 'delete_Medicina_nuclear' object.nss object.folio_orden object.determinacion %}" role="button">Borrar</a>
+              </div>
+              <br><a class="button4" href="{% url 'paciente_detail' object.nss %}" role="button">Regresar</a></br>
+              </p>
+        {% endfor %} 
+      </div><br> 
+  </div>
+{% endblock content %}

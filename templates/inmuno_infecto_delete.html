@@ -1,0 +1,20 @@
+<!-- templates/article_delete.html -->
+{% extends 'base.html' %}
+{% block content %}
+    {% if user.is_superuser %}
+        <div class="container2">
+            <div class="brand-logo-inmunoinfecto"></div>
+            <div class="brand-title">Eliminar inmuno infecto</div>
+            <div class="inputs">
+                <form action="" method="post">{% csrf_token %}
+                    <p>Esta seguro que desea eliminar nota de inmuno infecto con NSS:  "{{ inmuno_infecto.paciente.nss }}"?</p> 
+                    <button class="button2" type="submit">Confirmar</button>
+                </form>
+            </div>
+            <br><a class="a4" href="{% url 'paciente_detail' inmuno_infecto.paciente.id %}" role="button" >Cancelar</a></br>
+        </div>
+    {% else %}
+        <a>No tienes ese permiso</a>
+        <a href="{%url 'home'%}">home</a>
+    {% endif %}
+{% endblock content %} 

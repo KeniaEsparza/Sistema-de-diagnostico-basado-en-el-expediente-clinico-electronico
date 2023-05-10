@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Nota egreso{% endblock title %}
+
+{% block content %}
+<div class="container2">
+    <div class="card">
+      <div class="brand-title2">Nota egreso</div>
+        {% for object in nota_egreso_list %}
+          <div class="card2">     
+              <h2 class="a3"><b>NSS: {{ object.nss }}</b></h2> 
+                <p class="a3"><b>Fecha de Ingreso:</b> {{ object.fecha_ingreso }}</p><br>
+                <p class="a3"><b>Fecha de Egreso:</b> {{ object.fecha_egreso }}</p><br>
+                <p class="a3"><b>Especialidad egreso:</b> {{ object.especialidad_egreso }}</p><br>
+                <p class="a3"><b>Motivo egreso:</b> {{ object.motivo_egreso }}</p><br>
+                <p class="a3"><b>Envío:</b> {{ object.envio }}</p><br>
+                <p class="a3"><b>Diagnóstico ingreso:</b></p>
+                <textarea disabled>{{ object.diagnostico_ingreso}}</textarea><br>
+                <p class="a3"><b>Diagnóstico egreso: </b></p>
+                <textarea disabled>{{ object.diagnostico_egreso }}</textarea><br>
+                <p class="a3"><b>Resumen evolución:</b></p>
+                <textarea disabled>{{ object.resumen_evolucion}}</textarea><br>
+                <p class="a3"><b>Problemas pendientes:</b> {{ object.problemas_pendientes }}</p><br>
+                <p class="a3"><b>Plan tratamiento:</b> {{ object.plan_tratamiento }}</p><br>
+                <p class="a3"><b>Recomendaciones:</b> {{ object.recomendaciones }}</p><br>
+                <p class="a3"><b>Factores riesgo:</b> {{ object.factores_riesgo}}</p><br>
+                <p class="a3"><b>Pronóstico:</b> {{ object.pronostico }}</p><br>
+                <p class="a3"><b>Diagnóstico defuncion:</b> {{ object.diagnostico_defuncion}}</p><br>
+                <p class="a3"><b>Estado de salud:</b> {{ object.estado_salud }}</p><br>
+                <p class="a3"><b>Peso:</b> {{ object.peso }}</p><br>
+                <p class="a3"><b>Talla:</b> {{ object.talla }}</p><br>
+                <p class="a3"><b>Temperatura:</b> {{ object.temperatura }}</p><br>
+                <p class="a3"><b>Frecuencia respiratoria:</b> {{ object.frec_respiratoria}}</p><br>
+                <p class="a3"><b>Frecuencia cardíaca:</b> {{ object.frec_cardiaca }}</p><br>
+                <p class="a3"><b>Presión arterial:</b> {{ object.pres_arterial }}</p><br>
+                <p class="a3"><b>Imc:</b> {{ object.imc }}</p><br>
+                <p class="a3"><b>Saturación:</b> {{ object.saturacion}}</p><br>
+                <p class="a3"><b>Glc capilar:</b> {{ object.glc_capilar }}</p><br>
+                <p class="a3"><b>Diagnóstico final:</b> {{ object.diagnostico_final }}</p><br>
+              </div>
+              <br>
+              <div class="wrapper" >
+                <a class="button3" href="{% url 'editNota_egreso' object.nss object.fecha_egreso %}" role="button">Editar</a>
+                <a class="button3" href="{% url 'delete_Nota_egreso' object.nss object.fecha_egreso %}" role="button">Borrar</a>
+              </div>
+              <br><a class="button4" style="text-decoration: none;" href="{% url 'paciente_detail' object.nss %}" role="button">Regresar</a></br>
+              </p>
+        {% endfor %} 
+      </div><br> 
+  </div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Nuevo perfil de administrador{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-logo-usuarios"></div>
+        <div class="brand-title">Nuevo perfil de administrador</div>
+        <div class="inputs">
+            <form action="" method="post">{% csrf_token %}
+                {{ form.as_p }}
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'entro' %}" role="button" >Regresar</a></br>
+    </div>
+{% endblock content %}

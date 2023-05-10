@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Nuevo Nota Inicial{% endblock title %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    <div class="container2">
+        <div class="brand-logo-notainicial"></div>
+        <div class="brand-title">Registrar Datos de Nuevo Nota Inicial</div>
+        <div class="inputs">
+            <form action="addrecord/" method="post">{% csrf_token %} 
+
+                Fecha ingreso:<br>
+                <input name="fecha_ingreso" value="1900-01-01" type="date">
+                Género:<br>
+                <input name="genero" value="">
+                Especialidad ingreso:<br>
+                <input name="especialidad_ingreso" value="">
+                Motivo inter:<br>
+                <input name="motivo_inter" value="">
+                Interrogatorio:<br>
+                <input name="interrogatorio" value="">
+                dx:<br>
+                <input name="dx" value="">
+                Plan tratamiento:<br>
+                <input name="plan_tratamiento" value="">
+                Pronóstico:<br>
+                <input name="pronostico" value="">
+                Indicaciones:<br>
+                <input name="indicaciones" value="">
+                Estado salud:<br>
+                <input name="estado_salud" value="">
+                Peso:<br>
+                <input name="peso" value="00" type="number" step=0.01 required>
+                Talla:<br>
+                <input name="talla" value="00" type="number" step=0.01 required>
+                Temperatura:<br>
+                <input name="temperatura" value="00" type="number" step=0.01 required>
+                Frecuencia respiratoria:<br>
+                <input name="frec_respiratoria" value="00" type="number" step=0.01 required>
+                Frecuencia cardiaca:<br>
+                <input name="frec_cardiaca" value="00" type="number" step=0.01 required>
+                Presión arterial:<br>
+                <input name="pres_arterial" value="">
+                imc:<br>
+                <input name="imc" value="00" type="number" step=0.01 required>
+                Saturación:<br>
+                <input name="saturacion" value="00" type="number" step=0.01 required>
+                glc capilar:<br>
+                <input name="glc_capilar" value="00" type="number" step=0.01 required>
+                Diagnóstico inicial:<br>
+                <input name="diagnostico_inicial" value="">
+
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+    {% else %}
+        <div class="container2"> 
+            <div class="brand-title">No tienes ese permiso</div>
+            <a class="a4" style="text-decoration: none;" href="{% url 'users' %}" role="button" >Regresar</a></br>
+        </div>
+    {% endif %}
+{% endblock content %}

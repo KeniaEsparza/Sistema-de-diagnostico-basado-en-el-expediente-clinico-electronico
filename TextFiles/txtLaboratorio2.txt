@@ -1,0 +1,24 @@
+direccion de prestaciones medicas
+hospital de especialidades, cmno
+laboratorio clinico
+hoja de resultados folio pasteur: uj466624
+paciente: orozco/guzman,ramon fecha de resultados:12/02/2019
+diagnostico presuntivo:
+nss : 5289 67 0126 agregado medico: 1m1967or
+no_dx
+edad: 51 años sexo: masculino neumonia
+ubicacion: 14
+paciente hospitalizado
+folio de la orden: 201902120610 servicio solicitante: 27 neumologia
+fecha de la orden: 12/02/2019 medico solicitante: mendoza/topete,luz
+quimica clinica
+determinacion resultados unidades valores normales
+gasometria arterial
+ph 7.406 null (7.350-7.450)
+pco2 25.4 mm_de_hg (33.0-39.0)
+po2 62.5 mm_de_hg (74.0-78.0)
+hco3 15.6 mmol/l (18.0-23.0)
+co2 16.4 mmol/l (19.0-24.0)
+exceso de base -7.1 mmol/l (-3.0-1.5)
+saturacion de o2 92.6 % (92.0-96.0)
+jesus ernesto ortiz ochoa

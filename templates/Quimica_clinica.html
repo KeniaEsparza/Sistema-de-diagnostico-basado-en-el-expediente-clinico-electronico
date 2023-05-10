@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Química Clínica{% endblock title %}
+
+{% block content %}
+<div class="container2">
+    <div class="card">
+      <div class="brand-title2">Química Clínica</div>
+        {% for object in quimica_clinica_list %}
+          <div class="card2">     
+              <h2 class="a3"><b>NSS: </b>{{ object.nss }}</h2> 
+              <p class="a3" ><b>Folio orden: </b>{{ object.folio_orden }}</p>
+              <p class="a3"><b>Determinación: </b>{{ object.determinacion}}</p>
+              <p class="a3"><b>Resultado: </b>{{ object.resultado}}</p>
+              <p class="a3"><b>Unidad: </b>{{ object.unidad}}</p>
+              <p class="a3"><b>Valor normal: </b>{{ object.valor_normal }}</p>
+              </div>
+              <br>
+              <div class="wrapper" >
+                <a class="button3" href="{% url 'editQuimica_clinica' object.nss object.folio_orden object.determinacion %}" role="button">Editar</a>
+                <a class="button3" href="{% url 'delete_Quimica_clinica' object.nss object.folio_orden object.determinacion %}" role="button">Borrar</a>
+              </div>
+              <br><a class="button4" href="{% url 'paciente_detail' object.nss  %}" role="button">Regresar</a></br>
+              </p>
+        {% endfor %} 
+      </div><br> 
+  </div>
+{% endblock content %}

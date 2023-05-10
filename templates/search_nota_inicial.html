@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar Notas{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-title">Notas Iniciales</div>
+        <br>
+        {% for Nota in nota_inicial_list %}
+        <div class="card3">
+            <div>
+                <form action="{% url 'detail_nota_inicial' %}" method="get">
+                    Nss:<br>
+                    <input class="button3" type="text" placeholder={{Nota.nss}} name="nss" value="{{Nota.nss}}" aria-label="Search">
+                    Fecha de ingreso: <br>
+                    <input class="button3" type="text" placeholder={{Nota.fecha_ingreso}} name="fecha_ingreso" value="{{Nota.fecha_ingreso}}" aria-label="Search">
+                        <div>
+                            <button style="box-shadow: rgba(58, 127, 156, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; border-radius: 5px; align-content: center; display: block; margin: auto;" type="submit">Haga click aqui para ver mas detalles</button>
+                        </div>
+                </form>
+            </div>
+        {% endfor %} 
+        </div>
+    </div>
+{% endblock content %}

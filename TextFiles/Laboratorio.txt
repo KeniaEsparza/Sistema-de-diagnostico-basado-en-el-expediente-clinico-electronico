@@ -1,0 +1,64 @@
+dirección de prestaciones médicas
+hospital de especialidades, cmno
+laboratorio clínico
+hoja de resultados folio pasteur: uj547195
+paciente: guzman/larios,pedro fecha de resultados:08/07/2019
+diagnóstico presuntivo:
+nss : 2365 33 1130 agregado médico: 5m1933pe
+no_dx
+edad: 86 años sexo: masculino nac
+ubicación: 29
+paciente externo
+folio de la orden: 201907080596 servicio solicitante: 25 medicina interna
+fecha de la orden: 08/07/2019 médico solicitante: jauregui/garcia,hector
+hematologia
+determinación resultados unidades valores normales
+biometria hematica
+leucocitos 26.740 miles/ál (4.000-11.000)
+eritrocitos 3.28 millon/ál (4.00-5.00)
+hemoglobina 10.4 g/dl (12.0-17.0)
+hematocrito 31.3 % (35.0-52.0)
+vcm 96 fl (80.000000-100.00000)
+hcm 31.8 pg/cel (27.0-31.2)
+ccmh 33.3 % (31.8-35.4)
+plaquetas 643 miles/ál (130.00000-400.00000)
+neutrofilos totales: 88.7 % % /ál (37.0-75.0) 
+linfocitos 8.8 % % /ál (17.0-45.0) 
+monocitos 2.5 % % /ál (2.0-12.0) 
+mielocitos 0.7 % (null)
+coagulaciones
+determinación resultados unidades valores normales
+tiempo de tromb. parcial 30.50/28.20 seg_ratio:1.08 (26-40)
+dimero ii 9071.48 ng/ml (hasta 500)
+tiempo de protrombina
+tp 12.60/11.00 seg_ratio:1.15 (10-15)
+inr 1.16 null (null)
+inmuno-infecto
+determinación resultados unidades valores normales
+troponina
+troponina i ultrasensible 23.5 ng/l (m 0-11 h 0-25)
+valores de referencia
+procalcitonina
+procalcitonina 3.74 ng/ml ( 0.05)
+quimica clinica
+determinación resultados unidades valores normales
+glucosa sanguinea 116 mg/dl (65-110)
+urea
+urea 11.00 mmol/l (3.20-7.10)
+urea calculada 65.9560 mg/dl (20-43)
+creatinina serica 181.7 ámol/l (58.0-110.0)
+bilirrubina totales 0.39 mg/dl (0.20-1.30)
+bilirrubina directas 0.21 mg/dl (0.00-0.40)
+bilirrubina indirectas 0.18 mg/dl (0.00-1.10)
+tgp/alt 13 u/l (m 0-35 h 0-50)
+tgo/ast 25 u/l (15-46)
+fosfatasa alcalina 70 u/l (38-126)
+fosforo, suero. 1.0 mmol/l (0.8-1.5)
+calcio serico 2.3 mmol/l (2.1-2.6)
+cloro 108.0 mmol/l (98.0-107.0)
+potasio 4.80 mmol/l (3.60-5.00)
+sodio, suero 138.0 mmol/l (137.0-145.0)
+magnesio. 0.8 mmol/l (1-1)
+cpk 27.0 u/l (55.0-170.0)
+cpk-mb 11.0 u/l (0.00-16.00)
+ochoa ernesto jesus ortiz

@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block title %}Filtros{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-logo-notaegreso"></div>
+        <div class="brand-title">Filtrar datos para diagnostico</div>
+        {% if user.is_authenticated %}
+        <div class="inputs">
+            <form action="addrecord/" method="post">{% csrf_token %} 
+
+                Fecha ingreso inicio:<br>
+                <input name="fecha_ingreso_ini" value="" type="date">
+                Fecha ingreso final:<br>
+                <input name="fecha_ingreso_fin" value="" type="date">
+                Genero:<br>
+                <select name="genero">
+                    <option value="" selected>Ambos</option>
+                    <option value="f">Femenino</option>
+                    <option value="m">Masculino</option>
+                </select>
+                <br>
+                Edad Mínima:<br>
+                <input name="edad_min" value="0" type="number" step=0.01 required>
+                Edad Máxima:<br>
+                <input name="edad_max" value="0" type="number" step=0.01 required>
+                <br>
+                Seleccionar modelos<br>
+                <select name="modelos" onchange="change()" id="select">
+                    <option value="KNN" selected>KNN</option>
+                    <option value="DT" >Decision Tree</option>
+                    <option value="MLP" >MLP</option>
+                    <option value="NB" >NB</option>
+                    <option value="SVM" >SVM</option>
+                </select>
+                <br>
+                Multiclase: control - embolia - neumonia
+                <label id = '3_Form'>Exactitud: 57%</label>
+                <input type="checkbox" name="KNN_3_Form">
+                Biclase: <br>
+                Neumonia - Embolia
+                <label id = 'NE_Form'>Exactitud: 70%</label>
+                <input type="checkbox" name="KNN_NE_Form">
+                Neumonia - Control 
+                <label id = 'NC_Form'>Exactitud: 71%</label>
+                <input type="checkbox" name="KNN_NC_Form">
+                Embolia - Control 
+                <label id = 'EC_Form'>Exactitud: 65%</label>
+                <input type="checkbox" name="KNN_EC_Form">
+                Neumonia - NoNeumonia
+                <label id = 'NO_Form'>Exactitud: 65%</label>
+                <input type="checkbox" name="KNN_NO_Form">
+                Embolia - NoEmbolia
+                <label id = 'EO_Form'>Exactitud: 68%</label>
+                <input type="checkbox" name="KNN_EO_Form" class="check">
+
+                <button id="btn" class="button2" onclick="disableButton()" type="submit">Diagnosticar</button>
+            </form>
+            <script>
+                function change(){
+                    var x = document.getElementById('select').value;
+                    var uno,dos,tres,cuatro,cinco,seis;
+                    if(x === 'KNN'){
+                        uno = 'Exactitud: 57%';
+                        dos = 'Exactitud: 70%';
+                        tres = 'Exactitud: 71%';
+                        cuatro = 'Exactitud: 65%';
+                        cinco = 'Exactitud: 65%';
+                        seis = 'Exactitud: 68%';
+                    }
+                    else if(x === 'DT'){
+                        uno = 'Exactitud: 65%';
+                        dos = 'Exactitud: 73%';
+                        tres = 'Exactitud: 73%';
+                        cuatro = 'Exactitud: 65%';
+                        cinco = 'Exactitud: 68%';
+                        seis = 'Exactitud: 60%';
+                    }
+                    else if(x === 'MLP'){
+                        uno = 'Exactitud: 60%';
+                        dos = 'Exactitud: 75%';
+                        tres = 'Exactitud: 73%';
+                        cuatro = 'Exactitud: 67%';
+                        cinco = 'Exactitud: 68%';
+                        seis = 'Exactitud: 77%';
+                    }
+                    else if(x === 'NB'){
+                        uno = 'Exactitud: 78%';
+                        dos = 'Exactitud: 80%';
+                        tres = 'Exactitud: 75%';
+                        cuatro = 'Exactitud: 57%';
+                        cinco = 'Exactitud: 45%';
+                        seis = 'Exactitud: 55%';
+                    }
+                    else if(x === 'SVM'){
+                        uno = 'Exactitud: 80%';
+                        dos = 'Exactitud: 83%';
+                        tres = 'Exactitud: 59%';
+                        cuatro = 'Exactitud: 50%';
+                        cinco = 'Exactitud: 69%';
+                        seis = 'Exactitud: 65%';
+                    }
+                    document.getElementById('3_Form').innerHTML = uno;
+                    document.getElementById('NE_Form').innerHTML = dos;
+                    document.getElementById('NC_Form').innerHTML = tres;
+                    document.getElementById('EC_Form').innerHTML = cuatro;
+                    document.getElementById('NO_Form').innerHTML = cinco;
+                    document.getElementById('EO_Form').innerHTML = seis;
+                }
+                function disableButton() {
+                    var btn = document.getElementById('btn');
+                    btn.innerText = 'Cargando...';
+                }
+            </script>
+        </div>
+        {% endif %}
+        <br><a class="a4" href="{% url 'modelos' %}" role="button" >Regresar</a></br>
+    </div>
+{% endblock content %}

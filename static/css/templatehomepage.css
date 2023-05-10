@@ -1,0 +1,457 @@
+body {
+	background: #96D2E6;
+  font-family: "Montserrat", sans-serif;
+}
+.tilesWrap {
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+}
+.tilesWrap li {
+	display: inline-block;
+	width: 20%;
+	min-width: 200px;
+	max-width: 230px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #74A3B3;
+	border: 1px solid #252727;
+	text-align: left;
+}
+.tilesWrap li h2 {
+	font-size: 114px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.tilesWrap li h3 {
+	font-size: 25px;
+	color: #ffffff;
+	margin-bottom: 5px;
+}
+.tilesWrap li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	margin-top: 5px;
+}
+.tilesWrap li button {
+	background: transparent;
+	border: 1px solid #ffffff;
+	padding: 10px 20px;
+	color: #ffffff;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-40px);
+	opacity: 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.tilesWrap li button:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 120%;
+	background: #b7b7b7;
+	top: 0;
+	opacity: 0;
+	left: -140px;
+	border-radius: 0 20px 20px 0;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+	
+}
+.tilesWrap li:hover button {
+	transform: translateY(5px);
+	opacity: 1;
+}
+.tilesWrap li button:hover {
+	color: #262a2b;
+}
+.tilesWrap li button:hover:before {
+	left: 0;
+	opacity: 1;
+}
+.tilesWrap li:hover h2 {
+	top: 0px;
+	opacity: 0.6;
+}
+
+.tilesWrap li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(2deg, 2deg);
+}
+.tilesWrap li:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+.tilesWrap li:nth-child(1):before {
+	background: #C9FFBF;
+background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+}
+.tilesWrap li:nth-child(2):before {
+	background: #E6ACBB;
+background: -webkit-linear-gradient(to right, #ff9472, #E6ACBB);
+background: linear-gradient(to right, #ff9472, #E6ACBB);
+}
+.tilesWrap li:nth-child(3):before {
+	background: #eb1a03;
+background: -webkit-linear-gradient(to right, #ffc500, #e71d07);
+background: linear-gradient(to right, #ffc500, #ec210a);
+}
+.tilesWrap li:nth-child(4):before {
+	background: #FC354C;
+background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+background: linear-gradient(to right, #0ABFBC, #FC354C);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: red;
+}
+
+.container2 {
+  position: relative;
+  min-width: 350px;
+  min-height: 450px;
+  width: 500px;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: auto;
+}
+
+.brand-logo-pacientes {
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/paciente.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-usuarios{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/usuarios1.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-coagulaciones{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/coagulaciones.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-drogasterapeuticas{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/drogas_terapeuticas.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-hematologia{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/hematologia.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-inmunoinfecto{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/inmuno_infecto.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-inmunologia{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/inmunologia.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-medicinanuclear{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/medicina_nuclear.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-notaegreso{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/nota_egreso.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-notainicial{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/nota_inicial.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-pruebasespeciales{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/pruebasespeciales.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-quimicaclinica{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/quimicaclinica.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-logo-laboratorio{
+  height: 100px;
+  width: 100px;
+  background: url("/static/assets/img/laboratorio.png");
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  background-repeat: no-repeat; display: block; margin: auto;
+  background-position: center;
+}
+
+.brand-title {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+  display: block;
+  margin: auto;
+}
+
+.brand-title2 {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #99360A;
+  letter-spacing: 1px;
+  display: block;
+  margin: auto;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.button2 {
+  color: white;
+  margin-top: 20px;
+  background: #1DA1F2;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.button2:hover {
+  box-shadow: none;
+}
+
+.a4 {
+  position: absolute;
+  font-size: 15px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card{
+    display:block;
+    min-width: 350px;
+    min-height: 450px;
+    width: 500px;
+    border-radius: 0 10px 20px;
+    background-color: #97a5ab;
+    border : 1px solid #6c787d;
+    box-shadow: 6px 6px 6px #14212e;
+}
+
+.card2{
+    display:block;
+    min-width: 350px;
+    min-height: 50px;
+    width: 500px;
+    border-radius: 15px 15px 0 0;
+    background-color: #dcdb81;
+    border : 1px solid #96954d;
+    box-shadow: 6px 6px 6px #14212e;
+}
+
+.button3 {
+    background: #97a5ab;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #6c787d, inset -6px -6px 6px #97a5ab;
+    color:black;
+    font-size: 0.4cm;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button4 {
+    background: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    width:auto;
+    font-size: 14px;
+    border-radius: 25px;
+    display:block;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    color:black;
+    font-size: 0.4cm;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+}
+
+.principal{
+  color:#fddb3a;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  margin: auto;
+}
+
+.principal2{
+  color:#fddb3a;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  margin: auto;
+}

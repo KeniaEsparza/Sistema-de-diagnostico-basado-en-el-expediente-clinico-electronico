@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalles de los archivos{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-title">Detalles de los archivos</div>
+        <details>
+            <summary>Algunos detalles sobre el proceso...</summary>
+            <p>>Se Organizaron los PDFs Pendientes</p>
+            <p>>Se evaluaron los ARCHIVOS INEXISTENTES en base de datos de las notas</p>
+            <p>>Se cargaron datos a base de datos</p>
+          </details>
+          </br>
+          <p> Notas de ingreso ingresadas con exito: </p>
+          {% for i in Notas_Ingreso %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Notas de ingreso que fallaron: </p>
+          {% for i in Notas_Ingreso_fallo %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Notas Interconsulta ingresadas con exito: </p>
+          {% for i in Notas_Interconsulta %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Notas Interconsulta que fallaron: </p>
+          {% for i in Notas_Interconsulta_fallo %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Notas Egreso ingresadas con exito: </p>
+          {% for i in Notas_Egreso %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Notas Egreso que fallaron: </p>
+          {% for i in Notas_Egreso_fallo %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Laboratorios ingresados con exito: </p>
+          {% for i in Laboratorios %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Laboratorios que fallaron: </p>
+          {% for i in Laboratorios_fallo %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Otros ingresados con exito: </p>
+          {% for i in Otros %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+          <p> Otros que fallaron: </p>
+          {% for i in Otros_fallo %}
+            <p>-{{i}}</p>
+          {% endfor %}
+        </br>
+        </div>
+        <br><a class="button4" style="text-decoration: none;" href="{% url 'upload' %}" role="button">Regresar</a></br>
+    </div>
+{% endblock content %}

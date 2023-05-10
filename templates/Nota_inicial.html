@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Nota Inicial{% endblock title %}
+
+{% block content %}
+<div class="container2">
+    <div class="card">
+      <div class="brand-title2">Nota Inicial</div>
+        {% for object in nota_inicial_list %}
+          <div class="card2">     
+              <h2 class="a3"><b>NSS: {{ object.nss }}</b></h2> 
+                  <p class="a3"><b>Fecha de Ingreso:</b> {{ object.fecha_ingreso }}</p>
+                    <p class="a3"><b>Género:</b> {{ object.genero  }}</p>
+                    <p class="a3"><b>Especialidad ingreso:</b> {{ object.especialidad_ingreso }}</p>
+                    <p class="a3"><b>Motivo inter:</b> {{ object.motivo_inter}}</p>
+                    <p class="a3"><b>Interrogatorio:</b></p>
+                    <textarea disabled>{{ object.interrogatorio }}</textarea>
+                    <p class="a3"><b>Dx:</b> {{ object.dx }}</p>
+                    <p class="a3"><b>Plan tratamiento:</b> {{ object.plan_tratamiento  }}</p>
+                    <p class="a3"><b>Pronóstico:</b> {{ object.pronostico }}</p>
+                    <p class="a3"><b>Indicaciones:</b></p>
+                    <textarea disabled> {{ object.indicaciones}}</textarea>
+                    <p class="a3"><b>Estado salud:</b> {{ object.estado_salud }}</p>
+                    <p class="a3"><b>Peso:</b> {{ object.peso }}</p>
+                    <p class="a3"><b>Talla:</b> {{ object.talla }}</p>
+                    <p class="a3"><b>Temperatura:</b>  {{ object.temperatura }}</p>
+                    <p class="a3"><b>Frecuencia respiratoria:</b> {{ object.frec_respiratoria}}</p>
+                    <p class="a3"><b>Frecuencia cardíaca:</b> {{ object.frec_cardiaca }}</p>
+                    <p class="a3"><b>Presión arterial:</b> {{ object.pres_arterial }}</p>
+                    <p class="a3"><b>Imc:</b> {{ object.imc }}</p>
+                    <p class="a3"><b>Saturación:</b> {{ object.saturacion}}</p>
+                    <p class="a3"><b>Glc capilar:<b> {{ object.glc_capilar }}</p>
+                    <p class="a3"><b>Diagnóstico inicial:</b> {{ object.diagnostico_inicial }}</p>
+              </div>
+              <br>
+              <div class="wrapper" >
+                <a class="button3" href="{% url 'editNota_inicial' object.nss object.fecha_ingreso %}" role="button">Editar</a>
+                <a class="button3" href="{% url 'delete_Nota_inicial' object.nss object.fecha_ingreso %}" role="button">Borrar</a>
+              </div>
+              <br><a class="button4" style="text-decoration: none;" href="{% url 'paciente_detail' object.nss %}" role="button">Regresar</a></br>
+              </p>
+        {% endfor %}
+      </div><br> 
+  </div>
+{% endblock content %}

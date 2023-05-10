@@ -1,0 +1,20 @@
+<!-- templates/article_delete.html -->
+{% extends 'base.html' %}
+{% block content %}
+    {% if user.is_superuser %}
+        <div class="container2">
+            <div class="brand-logo-usuarios"></div>
+            <div class="brand-title">Eliminar perfil de doctor</div>
+            <div class="inputs">
+                <form action="" method="post">{% csrf_token %}
+                    <p>Esta seguro que desea eliminar a "{{ customuser.username }}"?</p> 
+                    <button class="button2" type="submit">Confirmar</button>
+                </form>
+            </div>
+            <br><a class="a4" style="text-decoration: none;" href="{% url 'users' %}" role="button" >Cancelar</a></br>
+        </div>
+    {% else %}
+        <a>No tienes ese permiso</a>
+        <a href="{%url 'entro'%}">Inicio</a>
+    {% endif %}
+{% endblock content %} 

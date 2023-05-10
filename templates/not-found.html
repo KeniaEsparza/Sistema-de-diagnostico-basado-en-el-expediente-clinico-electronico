@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Crear cuenta{% endblock title %}
+
+{% block content %}
+    {% if user.is_superuser %}
+        <h2>Crear cuenta</h2> 
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">Confirmar</button>
+        </form>
+    {% else %}
+        <a>No tienes ese permiso</a>
+        <p>Por favor, regresa a la pagina de inicio</p>
+        <a href="{% url 'home' %}">Regresar a HomePage</a>
+    {% endif %}
+{% endblock content %}

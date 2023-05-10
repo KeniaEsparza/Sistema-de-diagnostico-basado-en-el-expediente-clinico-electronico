@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Nuevo Química Clínica{% endblock title %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    <div class="container2">
+        <div class="brand-logo-quimicaclinica"></div>
+        <div class="brand-title">Registrar Datos de Nuevo Química Clínica</div>
+        <div class="inputs">
+            <form action="addrecord/" method="post">{% csrf_token %}    
+                Folio orden:<br>
+                <input name="folio_orden" value="" required>
+                Determinación:<br>
+                <input name="determinacion" value="" required>
+                Resultado:<br>
+                <input name="resultado" value="">
+                Unidad:<br>
+                <input name="unidad" value="">
+                Valor normal:<br>
+                <input name="valor_normal" value="">
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+    {% else %}
+        <div class="container2"> 
+            <div class="brand-title">No tienes ese permiso</div>
+            <a class="a4" style="text-decoration: none;" href="{% url 'users' %}" role="button" >Regresar</a></br>
+        </div>
+    {% endif %}
+{% endblock content %}

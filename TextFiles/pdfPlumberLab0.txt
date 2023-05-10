@@ -1,0 +1,69 @@
+dirección de prestaciones médicas
+hospital de especialidades, cmno
+laboratorio clínico
+hoja de resultados folio pasteur: uj719353
+paciente: najar/vargas,martha silvia fecha de resultados: 09/07/2020
+diagnóstico presuntivo:
+nss : 0409 76 0032 agregado médico: 1f1976or
+no_dx
+edad: 43 años sexo: femenino covid
+ubicación: 5
+paciente hospitalizado
+folio de la orden: 202007030012 servicio solicitante: 50  urgencias admision…
+fecha de la orden: 03/07/2020 médico solicitante: sandoval/villegas,cyndi
+resultados validados
+hematologia
+determinación resultados unidades valores normales
+biometria hematica no hay muestra
+validó castellanoszedano,laura elena
+coagulaciones
+determinación resultados unidades valores normales
+tiempo de tromb. parcial 27.4 / 28.8  seg ratio: 0.93 ((26-40))
+dimero ii 2618.72 ng/ml (feu) ng/ml (hasta 500)
+tiempo de protrombina
+  tp 14.1 / 11.5  seg ratio: 1.24 ((10-15))
+  inr 1.23
+validó castellanoszedano,laura elena
+inmuno-infecto
+determinación resultados unidades valores normales
+troponina
+troponina i ultrasensible 19.4 ng/l (m 0-11  h 0-25)
+                             valores de referencia
+                             hombres:  0-25  ng/l
+                             mujeres:  0-11  ng/l
+procalcitonina
+procalcitonina 1.64 ng/ml ng/ml (< 0.05)
+validó castellanoszedano,laura elena
+quimica clinica
+determinación resultados unidades valores normales
+glucosa sanguinea 108 mg/dl (65.000 - 110.000)
+urea
+urea 21.00 mmol/l (2.500 - 6.100)
+rafael magaña duarte
+matrícula: 99366290                              cédula profesional: 4455721
+urea calculada 125.9170 mg/dl (20 - 43)
+creatinina serica 850.8 ámol/l (46.000 - 92.000)
+bilirrubina totales 0.69 mg/dl (0.200 - 1.300)
+tgp/alt 17 u/l
+mujeres   <35 u/l
+varones   <50 u/l
+tgo/ast 20 u/l (15.000 - 46.000)
+calcio serico 1.8 mmol/l (2.100 - 2.550)
+cloro 105.0 mmol/l (98.000 - 107.000)
+potasio 4.50 mmol/l (3.600 - 5.000)
+sodio, suero 133.0 mmol/l (137.000 - 145.000)
+magnesio. 0.8 mmol/l (0.700 - 1.000)
+deshidrogenasa lactica 336 u/l (120.000 - 246.000)
+nuevos valores de referencia
+apartir del 10-sep-2018
+validó castellanoszedano,laura elena
+inmunologia
+determinación resultados unidades valores normales
+ferritina 86.85 ng/ml
+hombres 21.81 - 274.66 ng/ml mujeres  4.63 - 204.00 ng/ml (metodo
+utilizado: quimioluminiscencia)
+proteina c reactiva 69.2 mg/l (<10)
+validó castellanoszedano,laura elena
+rafael magaña duarte
+matrícula: 99366290                              cédula profesional: 4455721
+fecha de impresión : 10/12/2020 2

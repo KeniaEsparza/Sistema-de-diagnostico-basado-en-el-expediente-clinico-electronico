@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Filtros{% endblock title %}
+
+{% block content %}
+<div class="container2">
+    <div class="brand-title">Detalles de los modelos de aprendizaje automatico</div>
+    </br>
+    <p> Los modelos fueron entrenados basados en los datos del expediente clínico electrónico,
+        se modificaron sus parámetros y se realizaron diferentes experimentos con el objetivo de 
+        brindar un análisis predictivo del diagnóstico. </p>
+    </br>
+    <details>
+        <summary>Información de K Nearest Neighbor...</summary>
+        <p>>Es un método que busca en las observaciones más cercanas a la que se está tratando de predecir y 
+            clasifica el punto de interés basado en la mayoría de datos que le rodean.</p>
+    </details>
+    </br>
+    <details>
+        <summary>Información de Decision Tree...</summary>
+        <p>>Es un mapa de los posibles resultados de una serie de elecciones relacionadas</p>
+    </details>
+    </br>
+    <details>
+        <summary>Información de Naive Bayes...</summary>
+        <p>>Es un ecuacion que crea una tabla de probabilidad calculando las correspondientes a que ocurran los diversos eventos. 
+            Se usa para calcular la probabilidad posterior de cada clase.</p>
+    </details>
+    </br>   
+    <details>
+        <summary>Información de Vector Support Machine...</summary>
+        <p>>Son un conjunto de algoritmos de aprendizaje supervisado que correlacionan datos a un espacio de características 
+            de grandes dimensiones, de forma que los puntos de datos se puedan categorizar.</p>
+    </details>
+    </br>
+    <details>
+        <summary>Información de Neural Networks...</summary>
+        <p>>Enseña a procesar datos de una manera que está inspirada en la forma en que lo hace el cerebro humano.</p>
+    </details>                       
+    </br>
+    </br>
+    </div>
+    <br><a class="button4" style="text-decoration: none;" href="{% url 'modelos' %}" role="button">Regresar</a></br>
+</div>
+
+{% endblock content %}
+

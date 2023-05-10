@@ -1,0 +1,116 @@
+instituto mexicano del seguro social
+nota de egreso (alta)
+hospital: umae especialidades no. 175 médico tratante: camarena cisneros carlos matrícula: 991411383 cedula: 9685991 especialidad: neumología residente: galaviz humo jesus alfonso
+ fecha de clasificación: 28/09/2020
+ umae especialidades no. 175
+ clasificación:información confidencial fundamento legal: artículo 3, fracción ii,4,fracción iii y 18, fracción ii de la lftaipg;y, 22, primer parrafo de la lss
+ nombre paciente: gonzalez santana rosa margarita nss: 0315803957 agregado médico: 4f1951or cama: 01131 servicio: hospital unidad adscripción: 171
+vigencia: no 
+con derecho a atención médica:
+fecha y hora:
+no
+28/09/2020 - 12:23
+fecha y hora
+28/09/2020 12:23:00
+fecha de ingreso
+19/09/2020 14:41
+signos vitales
+fecha de egreso
+estado de salud:
+28/09/2020 12:23
+estable
+peso:
+talla:
+temperatura:
+36.5 °c
+frecuencia respiratoria:
+18
+frecuencia cardiaca:
+75
+tensión arterial:
+110/70
+índice masa corporal:
+saturación:
+94
+motivo de egreso
+mejoria
+envio a
+consulta especialidad
+diagnosticos de ingreso
+i26x embolia pulmonar 
+j91x derrame pleural en afecciones clasificadas en otra parte* 
+i10x hipertension arterial sistemica 
+diagnosticos de egreso
+i26x embolia pulmonar
+resumen de evolucion, manejo durante la estancia hospitalaria y 
+estado actual
+paciente femenino de 66 años de edad, en su 7mo día de estancia intrahospitalaria en el 
+servicio de neumología con los siguientes diagnósticos: 
+principal: 
+1. adenocarcinoma gástrico 
+1.1 tep de riesgo intermedio alto 
+1.1.1 derrame pleural izquierdo exudado no complicado sin predominancia en celularidad 
+1.1.1.1 toracocentesis 23/09/2020 
+2. hipertensión arterial sistémica 
+3. asma controlada 
+al pase de visita se refiere asintomática, con requerimientos de oxigeno a través de mascarilla 
+simple a 3 litros minuto por minuto con una saturación de 92%, signos vitales estables, afebril, 
+tolerando dieta, refiere aún no llega oxigeno domiciliario a casa. 
+exploración física general: neurologicamente integra, palidez de tegumentos leve, adecuado 
+estado de hidratación, no ingurgitación yugular, sin adenopatías cervicales ni supraclaviculares. 
+ruidos respiratorios de adecuada intensidad, movimientos de amplexion y amplexación 
+conservados, ruidos cardiacos rítmicos con desdoblamiento de segundo ruido pulmonar, sin 
+soplos. abdomen globoso, herida quirúrgica afrontada sin datos de infección o sangrado, no 
+datos de irritación peritoneal, no palpo megalias. extremidades hoomans y ollow negativos. 
+paraclinicos y gabinete: 
+23/09/2020: hb 10.2, hto 33.3, plaquetas 513, leucos 12.19, neutros 7000, linfos 3380, tpt 
+28.4, tp 12.6, inr 1.14, troponina i 13.7, glucosa 85, urea 41, creat 0.85, bnp 689. 
+23/09/2020: citoquimico de liquido pleural: glucosa 76, dhl 302, proteinas 5.2 gr/dl, celulas: 
+pmn: 50%, mononucleares 50%, eritrocitos abundantes, crenados 20, no crenados 80 
+ 20/09/2020: eri 4.12 hb 9.9 leucos 17.8 plaq 448mil tropinina i 94.8 urea 53 cr 70.1 p 1.6 ca 
+2.3 cl 103 k 3.50 na 136 mg 0.7 peptido natriuretico nt 5474 
+19/09/2020:eritros 4.18 hemoglobina 10.4 hematocrito 32.90 vcm 78.70 plaquetas 417 leucos 
+15.3 linfos 1430 neutros 88.8 calcio 2.1 cl 104 cr 68.00 dhl 309 glucosa 128 potasio 3.7 sodio 
+134 tp 14.00 inr 1.22 tgo 26.00 tgp 14 urea 53.96 cpk 33.00 dimero 4194 fosoforo 1.00 
+magnesio 0.80 bnp 4886 pcr 154 .1 troponina 226.9 
+**tomografía simple de tórax : con tráquea desplazada a la derecha, dilatación esofágica en 
+tercio medio e inferior sin lograr detectar crecimientos ganglionares , ausencia de derrame 
+pericárdico relación aortopulmonar y ralacion vd / vi no valobles por este medio , con presencia 
+de hiperdensidad heterogenea presente desde s1+2, s6, s10,s9.s8 izquierdo compatibles con 
+área de atelectasia y derrame pleural izquierdo . en ventana pulmonar : ausencia de vidrio 
+deslustrado , engrosamiento septal , sin ningún patrón predominante además de lo 
+previamente descrito en ventana mediastinal . 
+***angiotomografía de tórax: se observa defecto de llenado en área correspondiente a 
+segmentarias anteriores e inferiores derechas, asi como de la segmentaria anterior izquierda, 
+arteria pulmonar de 32.6 mm, aorta 39.1mm relación a/p 1.19, relación vd/vi 1.27. 
+**radiografia de torax 23/09/2020: adecuadamente identificada proyección pa, artes oseas sin 
+datos patológicos, partes blandas sin datos patológicos, se observa traquea con tracción hacia 
+la izquieda, silueta cardiaca no bien definida, con borramiento del angulo costodiafragmatico 
+izquierdo por imagen radiopaca compatible con derrame pleural minimo, hemitorax izquiero sin 
+imágenes sugestivas de ocupación alveolar, no se evidencia datos de neumotorax posterior a 
+procedimiento. 
+ett: 18/09/20: 
+ventriculo derecho con severa dilatacion, diametro trasverso basal 52 mm medio 46mm 
+longitudinal 78mm hipocinesia de segmentos apicales de la pared libre de vd, caf 34%, 
+tapse 17 mm vsat 13.3 cm/s relacion vd/vi 1.73. 
+conclusiones datos indirectos de tep con dilatacion severa de vd, con funcion sistolica 
+preservada fevi 71%, 
+femenino de la séptima década de la vida con los diagnosticas ya mencionados, paciente que 
+actualmente continua con requerimientos de oxigeno sin embargo se titula a la baja logrando 
+saturacion de 92% por puntas nasales a 3 litros/minuto, se ralizara tramite de oxigeno 
+domiciliario sin datos de dificultad respiratoria ni sangrado los cuales se vigilaran de manera 
+estrecha, continua manejo con heparina de bajo peso molecular. 
+problemas clinicos pendientes
+alta a domicilio al contar con oxigeno en casa
+plan de manejo y tratamiento
+tramite de oxigeno suplementario a 3 litros minuto por puntas nasales por 1 año. 
+se expide receta por enoxaparina 60 miligramos ámpulas, aplicar 60 miligramos subcutáneos 
+cada 12horas, resurtir en su clínica familiar por un año. 
+se expide receta por budesonide/formoterol 160/4.5, favor de surtir en su umf por 1 año 
+cita a la consulta externa de neumología 1° vez a disponibilidad. 
+atencion de factores de riesgo
+en caso de presentar datos de sangrado por boca, nariz, hematomas, melenas, o vómitos, 
+alteracion neurológica o fiebre acudir a urgencias. 
+pronostico
+ reservado 
+ 

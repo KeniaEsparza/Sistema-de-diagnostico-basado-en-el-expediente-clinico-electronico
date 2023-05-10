@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Buscar Notas{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-title">Laboratorio</div>
+        <br>
+        {% for Nota in laboratorio_list %}
+        <div class="card3">
+            <div>
+                <form action="{% url 'detail_laboratorio' %}" method="get">
+                    Nss:<br>
+                    <input class="button3" type="text" placeholder={{Nota.nss}} name="nss" value="{{Nota.nss}}" aria-label="Search">
+                    Folio:<br>
+                    <input class="button3" type="text" placeholder={{Nota.folio_orden}} name="folio_orden" value="{{Nota.folio_orden}}" aria-label="Search">
+                        <div>
+                            <button style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; border-radius: 5px; align-content: center; display: block; margin: auto;" type="submit">Haga click aqui para ver mas detalles</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        {% endfor %} 
+    </div>
+{% endblock content %}

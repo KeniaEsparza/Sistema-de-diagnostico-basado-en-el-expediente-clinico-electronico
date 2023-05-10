@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista{% endblock title %}
+ 
+{% block content %}
+    <div class="container2">
+      <div class="card"> 
+        {% for customuser in object_list %}
+            {% if user.username == customuser.username or user.is_superuser%}
+                <div class="card-header">
+                {% if user.is_superuser %}
+                  <span class="font-weight-bold"><a href="{% url 'edit' customuser.pk %}"><h4>Usuario: {{ customuser.username }}</h4></a></span>
+                {% else %}
+                  <span class="font-weight-bold"><a href="{% url 'edit_basic' customuser.pk %}"><h4>Usuario: {{ customuser.username }}</h4></a></span>
+                {% endif %}
+                </div> 
+                <div class="card-body">
+                    <p>Apellido: {{ customuser.apellido }}</p>
+                    <br />
+                    <a class="button3" href="{% url 'delete' customuser.pk %}" style="text-decoration: none; color: blanchedalmond;">Borrar</a>
+                    <br>
+                </div>
+                <br>
+            {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+{% endblock content %}

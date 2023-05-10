@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Paciente{% endblock title %}
+
+{% block content %}
+<div class="container2">
+  <div class="card">
+    <div class="brand-title2">Paciente</div>
+        <div class="card2">     
+            <h2 class="a3"><b>NSS: {{ object.nss }}</b></h2> 
+              <p class="a3">Nombre: {{ object.nombre_paciente }}</p>
+              <!-- <p class="a3">Camilla: {{ object.camillapaciente }}</p>
+                <p class="a3">Doctores: {{ object.author }}</p> -->
+                <br>
+                {% if user == object.author or user.is_superuser %}
+                  <a class="button3" style="text-decoration: none;" href="{% url 'edit_Paciente' object.pk %}" role="button">Editar</a>
+                {% endif %}
+                {% if user.is_superuser %}
+                  <a class="button3" style="text-decoration: none;" href="{% url 'delete_Paciente' object.pk %}" role="button">Borrar</a>
+                {% endif %}
+                <br>
+                <br>
+            </div>
+            <br>
+            <div class="wrapper" >
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_nota_inicial' object.pk%}" role="button">nota_inicial</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_nota_egreso' object.pk%}" role="button">nota_egreso</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_pruebas_especiales' object.pk%}" role="button">Pruebas especiales</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_quimica_clinica' object.pk%}" role="button">Quimica clinica</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_medicina_nuclear' object.pk%}" role="button">Medicina nuclear</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_laboratorio' object.pk%}" role="button">Laboratorio</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_inmunologia' object.pk%}" role="button">Inmunologia</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_inmuno_infecto' object.pk%}" role="button">Inmuno infecto</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_hematologia' object.pk%}" role="button">Hematologia</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_drogas_terapeuticas' object.pk%}" role="button">Drogas Terapeuticas</a>
+              <a class="button3" style="text-decoration: none;" href="{% url 'search_coagulaciones' object.pk%}" role="button">Coagulaciones</a>
+            </div>
+            <br><a class="button4" style="text-decoration: none;" href="{% url 'pacientes' %}" role="button">Regresar</a></br>
+            </p>
+    </div><br> 
+    <nav class="nav3">
+
+        <label for="touch"><span class="span1" >Crear</span></label>               
+        <input type="checkbox" id="touch"> 
+      
+        <ul class="slide">
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_nota_inicial' object.nss%}">Nota inicial</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_nota_egreso' object.nss%}">Nota egreso</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_pruebas_especiales' object.nss %}">Pruebas <br>especiales</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_quimica_clinica' object.nss%}">Química Clínica</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_medicina_nuclear' object.nss%}">Medicina <br>nuclear</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_laboratorio' object.nss%}">Laboratorio</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_inmunologia' object.nss%}">Inmunología</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_inmuno_infecto' object.nss%}">Inmuno infecto</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_hematologia' object.nss%}">Hematología</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_coagulaciones' object.nss%}">Coagulaciones</a></li> 
+          <li><a class="secundario" style="text-decoration: none;color:black;" href="{% url 'nueva_drogas_terapeuticas' object.nss%}">Drogas Terapéuticas</a></li> 
+        </ul>
+      
+      </nav> 
+</div>
+{% endblock content %}

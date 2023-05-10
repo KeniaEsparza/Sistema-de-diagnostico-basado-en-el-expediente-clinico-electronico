@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}Filtros{% endblock title %}
+
+{% block content %}
+	<div class="container3">
+	<h2 class="brand-title">Reporte</h2><br>	
+	<details>
+        <summary>Información de nomenclaturas...</summary>
+        <p>-N: Neumonía</p>
+		<p>-E: Embolia</p>
+		<p>-C: Control</p>
+		<p>-O: Otro</p>
+		<p>-Edad en años</p>
+    </details>
+	<br>
+	<details>
+        <summary>Información de filtrado...</summary>
+		<p>-Genero: {{genero}}</p>
+		<p>-Edad min: {{edad_min}}</p>
+		<p>-Edad max: {{edad_max}}</p>
+		<p>-Fecha ingreso inicio: {{fecha_ingreso_ini}}</p>
+		<p>-Fecha ingreso fin: {{fecha_ingreso_fin}}</p>
+        <p>-Algoritmo: {{modelo}}</p>
+		<p>-N-E-C: {{ NEC }}</p>
+		<p>-N-E: {{ NE }}</p>
+		<p>-N-C: {{ NC }}</p>
+		<p>-E-C: {{ EO }}</p>
+		<p>-N-O: {{ NO }}</p>
+		<p>-E-O: {{ EO }}</p>
+    </details>
+	<br>
+	<input type="button" value="Descargar Excel &#128202;" onclick="window.open('download_my_pdf')" style="background: #1DA1F2; width: 250px; display: block; margin: auto;">	
+	<br>	
+	<table id="customers">
+		<thead>
+		{% if col %}
+			<tr>
+			{% for i in col %}
+				<th>{{i}}</th>
+			{% endfor %}
+			</tr>
+		{% endif %}
+		</thead>
+		<tbody>
+		<!-- jinja2 Technique -->
+		{% if d %}
+		{% for j in d %}
+			{% for i in j %}
+			<tr>
+				<td>{{i.nss}}</td>
+				<td>{{i.edad}}</td>
+				<td>{{i.genero}}</td>
+				<td>{{i.fecha_ingreso}}</td>
+
+				{% if i.N_E_C %}
+					<td>{{i.N_E_C}}</td>
+				{% endif %}
+
+				{% if i.N_E %}
+					<td>{{i.N_E}}</td>
+				{% endif %}
+
+				{% if i.N_C %}
+					<td>{{i.N_C}}</td>
+				{% endif %}
+
+				{% if i.E_C %}
+					<td>{{i.E_C}}</td>
+				{% endif %}
+
+				{% if i.N_O %}
+					<td>{{i.N_O}}</td>
+				{% endif %}
+
+				{% if i.E_O %}
+					<td>{{i.E_O}}</td>
+				{% endif %}
+			</tr>
+			{% endfor %}
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		{% endfor %}
+		{% endif %}
+		</tbody>
+	</table>
+	</div>
+
+	</body>
+	</html>
+{% endblock content %}

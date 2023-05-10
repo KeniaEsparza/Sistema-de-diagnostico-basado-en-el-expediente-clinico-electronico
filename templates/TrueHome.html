@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es"> 
+    <head>
+        <link href="/static/css/templatehomepage.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="principal">Sea Bienvenido a: </h1> 
+        <br>
+        <br>
+        <br>
+        <h1 class="principal2"> <br>    Sistema de diagnóstico basado en el expediente clínico electrónico </h1>
+        <br>
+        <ul class="tilesWrap">
+            <li>
+                <h2>01</h2>
+                <h3>Pacientes &#128300;</h3>
+                <p>
+                    Crea expedientes de pacientes de manera manual o através de carga de pdf
+                </p>
+                <p>
+                    Busca pacientes por NSS o Nombre 
+                </p>
+            </li>
+            <li>
+                <h2>02</h2>
+                <h3>Médicos &#127973;</h3>
+                <p>
+                    Crea un perfil de médico para que pueda acceder servicios restringidos
+                </p>
+                <p>
+                    Consulta el perfil de un Médico
+                </p>
+            </li>
+            <li>
+                <h2>03</h2>
+                <h3>Estadísticas  &#128246;</h3>
+                <p>
+                    Observa los resultados del análisis de los expedientes 
+                </p>
+                <p>
+                    Filtra los resultados para que solo se muestren los resultados con las especificaciones que deseas
+                </p>
+            </li>
+            <li>
+                <h2>04</h2>
+                <h3>Diagnósticos &#129298;</h3>
+                <p>
+                    Inicia los análisis de los expedientes los pacientes para obtener un diagnóstico aproximado
+                </p>
+                <p>
+                    Filtra los expedientes para que solo se realice los que tengan los parámetros que desees
+                </p>
+            </li>
+        </ul>
+        {% if user.is_authenticated %}
+            <a>Ya estas autentificado</a>
+            <a href="{%url 'entro'%}">Inicio</a>
+        {% else %}
+        <div class="container2">
+            <div class="brand-logo-usuarios"></div>
+            <div class="brand-title">Inicio de sesión</div>
+            <div class="inputs">
+                <form action="" method="post">{% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="button2" type="submit">Guardar</button>
+                </form>
+            </div>
+            <label>No tienes sesión? <a href="{% url 'signup_basic' %}" >Crear sesión</a></label>
+            <br><a class="a4" href="{% url 'home' %}" role="button" >Regresar</a></br>
+        </div>
+        {% endif %}
+    </body>
+</html>

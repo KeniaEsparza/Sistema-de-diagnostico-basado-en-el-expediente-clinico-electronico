@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar datos <del></del> usuario{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+            <div class="brand-logo-usuarios"></div>
+            <div class="brand-title">Editar datos del usuario</div>
+            <div class="inputs">
+                <form action="" method="post">{% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="button2" type="submit">Guardar</button>
+                </form>
+            </div>
+            <a class="a4" href="{% url 'users' %}" role="button" >Regresar</a></br>
+        <br>
+    </div>
+{% endblock content %}

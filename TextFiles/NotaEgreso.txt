@@ -1,0 +1,224 @@
+instituto mexicano del seguro social
+nota de egreso (alta) fecha de clasificación: 19/09/2019
+umae especialidades no. 175 clasificación:información confidencial fundamento legal: artículo 3, fracción ii,4,fracción iii y 18, fracción ii de la lftaipg;y, 22, primer parrafo de la lss 
+hospital: umae especialidades no. 175 médico tratante: guerrero rodriguez anibal matrícula: 991431826 cedula: 7966101 especialidad: neumología residente: alanis rodriguez jesus roberto nombre paciente: hernandez rebolledo miguel nss: 0315905264 agregado médico: 4m1954or cama: 01191 aislada servicio: consulta externa unidad adscripción: 3 
+vigencia: con derecho
+con derecho a atención médica:
+fecha y hora:
+si
+19/09/2019 - 11:09
+fecha y hora
+19/09/2019 10:26:00
+fecha de ingreso
+31/08/2019 19:34
+signos vitales
+fecha de egreso
+estado de salud:
+19/09/2019 10:26
+motivo de egreso
+mejoria
+envio a
+casa
+diagnosticos de ingreso
+estable
+peso:
+talla:
+temperatura:
+36.5 °c
+frecuencia respiratoria:
+18
+95
+frecuencia cardiaca:
+tensión arterial:
+133/091
+índice masa corporal:
+saturación:
+92
+a150 tuberculosis del pulmon, confirmada por hallazgo microscopico 
+del bacilo tuberculoso en esputo, con 
+e128 diabetes mellitus asociada con desnutricion,con complicaciones no 
+especificadas 
+i10x hipertension arterial sistemica 
+diagnosticos de egreso
+j15x neumonia bacteriana, no clasificada en otra parte 
+i10x hipertension arterial sistemica 
+e127 diabetes mellitus asociada con desnutricion,con complicaciones 
+multiples 
+resumen de evolucion, manejo durante la estancia hospitalaria y 
+estado actual
+diagnosticos de ingreso:  
+1. 1 neumonía adquirida en la comunidad (multilobar), port i, psi iv. 
+2. diabetes mellitus tipo 2 en descontrol simpl 
+3. 2.hipertensión arterial sistémica 
+diagnosticos de egreso:  
+** principales: 
+1. tuberculosis pulmonar en tratamiento fase intensiva.  
+2. neumonía adquirida en la comunidad (multilobar), port i, psi iv resuelta.  a.germen aislado staphylococcus lentus. 
+** concomitantes:  
+1. desequilibrio hidroelectrolítico 
+1.2 hiponatremia moderada crónica asintomática 
+1.3 hipocloremia 
+2. anemia grado 2 oms, microcítica, hipocrómica. 
+3. hipoalbuminemia 
+** comorbidos: 
+1.diabetes mellitus tipo 2 en descontrol simple 
+2. hipertensión arterial sistémica en autocontrol (sin tratamiento durante la hospitalización) 
+3. estreñimiento crónico 
+4. ulceras por presión grado 2: de 5x5 cm trocanterica derecha y sacra. 
+5. deprivación visual bilateral (secundario a complicaciones dm2) 
+6. dismovilidad crónica 4ª escala de dinamarca (secundaria amputación supracondilea 
+derecha por complicaciones dm2)  
+7. insomnio de conciliación.  
+**ficha de identificación: se trata de paciente masculino de 64 años, originario y residente de 
+guadalajara jalisco, soltero, ocupación zapatero ya retirado, escolaridad: secundaria 
+incompleta, religión: católico, quien cuenta con los siguientes antecedentes de relevancia: 
+**antecedentes heredofamiliares: padres y hermanos con diabetes mellitus tipo 2, padre con 
+antecedente cáncer de páncreas. 
+**antecedentes personales patológicos:  
+-diabetes mellitus tipo 2 en descontrol de 30 años de diagnóstico en tratamiento con insulina 
+nph 30 ui en la mañana y 10 ui por la noche, mal control glucémico con complicaciones 
+oftalmicas (ceguera bilateral por retinopatía diabetica) y vasculares (amputación infracondilea de 
+miembro pélvico derecho, amputación de primer ortejo de miembro pélvico izquierdo). 
+- hipertensión arterial diagnosticada hace 30 años sin medicamento actual.  
+-cirugías: amputación infracondilea derecha hace 18 años, amputación primer ortejo pie izquierdo hace 18 años. 
+-traumáticos: fractura de cadera derecha hace 16 años con colocación de prótesis. 
+- transfusiones positivas en do ocasiones. niega alergias a medicamentos. 
+- ultima hospitalización hace 5 años por trombosis venosa profunda.  
+**antecedentes personales no patológicos: habita en casa rentada con una de sus hijas, la 
+casa cuenta con todos los servicios básicos de urbanización, zoonosis negada. casa cuenta 
+con piso y esta repellada. en total habitan 6 personas. paciente comparte habitación con dos 
+personas más, niega habito tabáquico, alcoholismo positivo hasta la embriaguez desde los 14 
+años hasta hace 5 meses cada 8 días. refiere tuvo exposición a polvos y solventes en su 
+trabajo. biomasa y combe negado. 
+**resumen del motivo de ingreso y hospitalización:  
+inició su padecimiento actual un mes y medio previo a su hospitalización actual al presentar 
+infección del tracto urinaria (disuria, orina fétida, tenesmo vesical) la cual fue tratada por 
+medico particular ( se desconoce tratamiento), paciente comenta que mejoró sintomatología 
+urinaria sin embargo persistía con picos febriles de hasta 40 grados centígrados, sin 
+predominio de horario los cual remitían a antipiréticos (paracetamol) además de presencia de 
+tos productiva sin lograr expectorar, artralgias, astenia y adinamia, anorexia, lo que lo llevó a 
+estar postrado en cama desde hace un mes. paciente negó disnea.  
+durante su hospitalización en este servicio se inició esquema antibiótico para neumonía 
+adquirida en la comunidad a base de ceftriaxona y con cobertura para anaerobios por sospecha 
+de riesgo de microaspiraciones clindamicina, sin embargo debido a la persistencia de datos de 
+respuesta inflamatoria sistémica por más de 72 horas(fiebre, persistencia de la neutrofilia, 
+descontrol glicémico, delirium hipoactivo, se tomaron muestras para cultivo, así como 
+baciloscopias seriadas y al aislarse (staphylococcus lentus) en cultivo de expectoración se 
+redirigió el tratamiento ( fecha de inicio 06/09/19) a base de piperacilina/tazobactam + 
+vancomicina) completando esquema de 12 días efectivos, asi como se recabaron 2 
+baciloscopias positivas por lo que se inició asilamiento de contacto y tratamiento el (07/19/19) 
+fase intesiva para tuberculosis a base de dotbal. 
+durante su estancia se ajustaron niveles de insulina basal debido a descontroles glicémicos 
+simples, así como desimpactación fecal, se inició benzodiacepina (clonazepam gotas 2.5 mg/1 
+ml (5 gotas = 0.5 mg a las 21:00 horas) para insomnio (fechad e inicio 11/09/19). se ajustaron 
+electrolitos (reposición de potasio y magnesio).  
+debido a la mejoría clínica, el haber completado esquema antibiótico, y estar en su onceavo día 
+efectivo de antifimico se decide dejarlo de prealta a su domicilio, el día de hoy se realizará 
+tramite de oxigeno ya que el paciente con base a oximetría la cual aire ambiente es <85%.  
+el día de hoy al pase de visita: tolera la vía oral, afebril, niega la presencia de dolor abdominal, 
+reporta 1 evacuaciones el día ayer bristol 4, uresis espontanea. en hoja de enfermería se 
+reportan signos vitales dentro de parámetros aceptables.  
+**a la exploración física: alerta, orientado, cooperador, leve palidez y subhidratación de piel y 
+tegumentos, afebril. normocéfalo, cuello con leve distensión venosa yugular. tórax normolineo, 
+movimientos de amplexión y amplexación simétricos, estertores gruesos en región 
+infraclavicular derecha con aumento de vibraciones vocales y trasmisión de voz con 
+pectoriloquia, disminución de ruidos respiratorios en región subescapular izquierda, sin otros 
+agregados. ruidos cardiacos rítmicos sin soplos ni agregados. abdomen, blando, depresible, no 
+doloroso a la palpación, sin datos de irritación peritoneal, peristalsis normal. ulcera en región 
+sacrocoxal sin datos de infección. extremidad pélvica derecha con amputación infracondilea, 
+resto sin compromiso neurovascular distal.  
+**laboratorio y gabinete: 
+01/09/2019: tac simple de torax: adecudamente identificada con el nombre del paciente, en 
+ventana mediastinal traquea sin estrechamiento sin ocupaciones en su luz, esófago ligeramente 
+dilatado, presencia de linfadenopatias mediastinales en estación 1,2,4,. relación aorto/ 
+pulmonar menor a 1. presencia de hiperdensidad en lobulo superior derecho con imagen 
+hipodensa en su interior. imagen hipodensa en lobulo inferior izquierdo con imágenes 
+hipodensas en su interior. en la ventana mediastinal corroboramos lo antes mencionado, 
+presencia de broncograma aereo en lobulo supeior derecho y lobulo inferior izquierdo, presencia 
+de excavacion en la consolidación izquierda. 
+31/08/19 hemoglobina 10.6, hematocrito 31.6, plaquetas 348, leucocitos 6.48, neutrofilos 88.25, 
+glucosa 324, urea 7, creatinina 61.1, bt 0.73 bd 0.57 bi 0.16, amilasa 30, tgp 40. tgo 97. cloro 87, 
+potasio 3, sodio 130, dhl 390, ego con levaduras. 
+31/08/19 rx pa tórax: con consolidación de lóbulo superior derecho y zona de consolidación 
+inferior izquierda con broncograma aereo. 
+02/09/19: glucosa 68, urea 23.9, creat 0.56, p 0.8, ca 1.6, cl 93, k 2.5, na 133, hb a1c 10.1, proca 
+0.19 
+01/09/19 gasometria arterial: ph 7.55 pco2 34 po2 53.2 eb 7.3 sat 92% - alcalosis rmetabolica 
+e hipoxemia. 
+03/09/2019*cultivo de expectoración (tomado 03.09.19 reportado 06.09.19): desarrollo staphylococcus lentus 1 /  
+*antibiograma sensible a: daptomicina, doxiciclina, gentamicina, linezolid, nitrofurantoina, 
+rifampicina, tetraciclina, trimetroprima/sulfametoxazol, vancomicina. *resistente a clindamicina, 
+eritromicina, levofloxacino, oxicilina, ciprofloxacino, moxifloxacino. screening de cefoxitina 
+positivo. resis indu a clindamicina neg.  
+* baar seriado (3 muestras) muestras 2 y 3, positivo + 
+09/09/2019 hb 9.3, hto 28.6, vcm 79, hcm 25.8, plaq 387, leucos 8.3, neutros 84% (7,070), 
+gluc 43, urea 23, cr 0.54, bt 0.9 , proteínas totales 6.7, alb 2.6, tgp 31, tgo 83 p 0.9, ca 
+1.9, cl 93, k 4.3, na 126, mg 0.7, proca 0.33 dhl 390 
+13/09/19hemoglobina 8.2, hto: 27.4, vcm 84.3, hcm: 25.2, plaquetas 508, 
+leucocitos 5640, neutrofilos 74.4, glucosa 81, urea 4, urea calculada 23.89, 
+creatinina 46.4, bt 0.49, proteinas totales 6.4, albumina 2.4, globulinas 4, 
+relacion a/g, alt 20, ast: 42, fosforo1.2, calcio 2, cloro 95, potasio 3.3, sodio 
+133, magnesio 0.7 
+problemas clinicos pendientes
+tramiten de oxigeno suplementario 
+tramitar cita en hgr 110 medicina interna para contro del comorbidos y epidemiologia para 
+seguimiento por tuberculosis.  
+tramitar cita para acudir en 1 mes a seguimiento al servicio de consulta externa neumología dr. 
+camarena, traer rsultados impresos de laboratorio (ya se entrego solicitud) y radiografia de torax 
+(ya se entregó solicitud) 
+canjear receta en farmacia por dotbal.  
+continuar con tratamiento fase intensiva dotbal.  
+• deberá acudir a su unidad de medicina familiar correspondiente para que le otorguen receta 
+por los siguientes fármacos: 
+• insulina nph 31 unidades subcutáneas predesayuno y 16 unidades precena subcutáneas. 
+resurtir en su umf  
+• complejo b tabletas 2 tabletas cada 12 horas. resurtir en su umf  
+• clonazepan solución gotas administrar 5 gotas a las 21:00 horas. resurtir en su umf. 
+• senosidos ab 2 tabletas vía oral cada 24 horas. resurtir en su umf  
+• actualmente presión arteria 
+plan de manejo y tratamiento
+**comentario: se trata de masculino de la séptima década de la vida quien ingresa a este 
+hospital derivado de cuadro infeccioso pulmonar, durante su hospitalización se documentó la 
+presencia de infección por tuberculosis a nivel pulmonar, actualmente con esquema de 
+tratamiento fase intensiva dotbal en su onceavo día efectivo (iniciado 07/09/19), ha completado 
+esquema de 12 días con piperacilina/tazobactam 4.5 gramos iv cada 6 horas + vancomicina 1 
+gramo iv cada 12 horas (iniciados 06/09/19) , actualmente con evacuaciones al corriente, sin 
+datos de sangrado a ningun nivel, se ajustan dosis de clonazepam a 5 gotas a las 20 horas (0.5 
+mg) . se hace hincapié en medidas no farmacológicas sin embargo al ser un paciente con 
+deprivación visual bilateral, dependiente, con dismovilidad, aislado por presencia de tb, así 
+como una red de apoyo deficiente se beneficia poco. 
+paciente con múltiples síndromes geriátricos. alto riesgo de complicaciones hospitalarias.   
+pronóstico: reservado para la vida y la función. paciente altamente complicable. 
+plan:  
+ 
+1. alta del servicio de neumología tercer nivel. 
+2. deberá trasladarse a su domicilio en ambulancia una vez que el oxigeno suplementario
+haya llegado.  
+4. se entrega receta por oxigeno suplementario con puntas nasales para realizar tramite, el
+cual deberá usarse por 24 horas durante 3 meses y revalorar. 
+ 
+5.se entrega receta por tratamiento dotbal (fase intensiva) fecha de inicio 07/09/19. 
+estoy de acuerdo con el tratamiento otorgado a mi paciente y el alta. 
+se me ha brindado la explicacion adecuada del plan a seguir.  
+familiar responsable 
+ 
+recomendaciones para vigilancia ambulatoria
+movilizacio cama cada 2 horas en cama 
+uso de oxigeno con puntas nasales durante 24 horas a 3 litros por 3 meses. vigilar que si lo 
+utilice.  
+consumo de 1.5 -2 litros de agua al dia 
+alimentación adecuada para diabetico asistida en fowler estricto 
+comer con horarios establecidos. 
+no abandonar su tratamiento para la tuberculosis uso de cubrebocas en casa 
+atencion de factores de riesgo
+vigilancia de los niveles de glucosa con glucomentro en casa, esta no debera ser menor de 70 
+mg/dl o mayor 180 mg/dl) debera medirse antes de cada comida o ante datos de alarma como: 
+(glucosa baja). 
+datos de glucosa baja (temblor, sudración, nauseas, alteraciones del estado de alerta).  
+. 
+pronostico
+paciente altamente complicable por los comorbidos con los que cuenta.  
+dr anibal guerrero rodriguez édico de base de neumología mat 991431826 
+dgp 7966101 
+dr. miguel angel valencia fraire r4 neumologia mat 991435465 dgp 8902616 
+dr. felix emmanuel perez talavera r3 neumologia mat: 98086699 d 

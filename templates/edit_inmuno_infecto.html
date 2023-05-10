@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Editar Inmuno infecto{% endblock title %}
+
+{% block content %}
+    {% if user.is_superuser %}
+      <div class="container2">
+        <div class="brand-logo-inmunoinfecto"></div>
+        <div class="brand-title">Editar Inmuno infecto</div>
+        <div class="inputs">
+            <form action="updaterecord/" method="post">{% csrf_token %}
+                Resultado:<br>
+                <input name="resultado" value="{{ nota.resultado }}">
+                Unidad:<br>
+                <input name="unidad" value="{{ nota.unidad }}">
+                Valor normal:<br>
+                <input name="valor_normal" value="{{ nota.valor_normal }}">
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+    {% else %}
+      <div class="container2"> 
+        <div class="brand-title">No tienes ese permiso</div>
+        <a class="a4" href="{% url 'users' %}" role="button" >Regresar</a></br>
+      </div>
+    {% endif %}
+{% endblock content %}

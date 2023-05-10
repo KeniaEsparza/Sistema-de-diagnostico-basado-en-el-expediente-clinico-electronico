@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Editar Nota Inicial{% endblock title %}
+
+{% block content %}
+    {% if user.is_superuser %}
+      <div class="container2">
+        <div class="brand-logo-notainicial"></div>
+        <div class="brand-title">Editar Nota Inicial</div>
+        <div class="inputs">
+            <form action="updaterecord/" method="post">{% csrf_token %}
+              Género:<br>
+              <input name="genero" value="{{ nota.genero }}">
+              Especialidad ingreso:<br>
+              <input name="especialidad_ingreso" value="{{ nota.especialidad_ingreso }}">
+              Motivo inter:<br>
+              <input name="motivo_inter" value="{{ nota.motivo_inter }}">
+              Interrogatorio:<br>
+              <input name="interrogatorio" value="{{ nota.interrogatorio }}">
+              dx:<br>
+              <input name="dx" value="{{ nota.dx }}">
+              Plan tratamiento:<br>
+              <input name="plan_tratamiento" value="{{ nota.plan_tratamiento }}">
+              Pronóstico:<br>
+              <input name="pronostico" value="{{ nota.pronostico }}">
+              Indicaciones:<br>
+              <input name="indicaciones" value="{{ nota.indicaciones }}">
+              Estado salud:<br>
+              <input name="estado_salud" value="{{ nota.estado_salud }}">
+              Peso:<br>
+              <input name="peso" value="{{ nota.peso }}" type="number" step=0.01 required>
+              Talla:<br>
+              <input name="talla" type="number" step=0.01 value="{{ nota.talla }}" required>
+              Temperatura:<br>
+              <input name="temperatura" value="{{ nota.temperatura }}" type="number" step=0.01 required>
+              Frecuencia respiratoria:<br>
+              <input name="frec_respiratoria" value="{{ nota.frec_respiratoria }}" type="number" step=0.01 required> 
+              Frecuencia cardíaca:<br>
+              <input name="frec_cardiaca" value="{{ nota.frec_cardiaca }}" type="number" step=0.01 required>
+              Presión arterial:<br>
+              <input name="pres_arterial" value="{{ nota.pres_arterial }}">
+              imc:<br>
+              <input name="imc" value="{{ nota.imc }}" type="number" step=0.01 required>
+              Saturación:<br>
+              <input name="saturacion" value="{{ nota.saturacion }}" type="number" step=0.01 required>
+              glc capilar:<br>
+              <input name="glc_capilar" value="{{ nota.glc_capilar }}" type="number" step=0.01 required>
+              Diagnóstico inicial:<br>
+              <input name="diagnostico_inicial" value="{{ nota.diagnostico_inicial }}">
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+    {% else %}
+      <div class="container2"> 
+        <div class="brand-title">No tienes ese permiso</div>
+        <a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+      </div>
+    {% endif %}
+{% endblock content %}

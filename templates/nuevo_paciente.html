@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Nuevo Paciente{% endblock title %}
+
+{% block content %}
+    <div class="container2">
+        <div class="brand-logo-pacientes"></div>
+        <div class="brand-title">Registrar Datos de Paciente</div>
+        <div class="inputs">
+            <form action="" method="post">{% csrf_token %}
+                {{ form.as_p }}
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+{% endblock content %}

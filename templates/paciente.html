@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es"> 
+    <head>
+      <head>
+        <link href="/static/css/pacientes.css" rel="stylesheet">
+      </head>
+    </head>
+    <body>
+        <div class="templatemo_header">
+            <h1 class="principal">Sistema de diagnóstico basado en el expediente clínico electrónico</h1>
+            <section>
+                <nav class="navMenu">
+                  <a href="#">Pacientes <br> &#128300;</a>
+                  <a href="{% url 'users' %}">Médicos <br> &#127973;</a>
+                  <a href="{% url 'estadisticas' %}">Estadísticas <br> &#128246;</a>
+                  <a href="{% url 'modelos' %}">Diagnósticos  &#129298;</a>
+                  <a href="{% url 'entro' %}">Inició <br> &#127968;</a>
+                  <div class="dot"></div>
+                </nav>
+            </section>
+            {% if user.is_authenticated %}
+                <nav class="nav2">    
+                    <div class="navicon">
+                    <div></div>
+                    </div> 
+                    <a class="a3">Hola {{ user.username }}!</a>
+                    <a class="a2" style="text-decoration: none;" href="{% url 'password_change'%}">Cambiar contraseña</a> 
+                    <a class="a2" style="text-decoration: none;" href="{% url 'logout' %}">Cerrar sesión</a>
+                </nav>
+            {% else %}
+                <form> 
+                    <nav class="nav2">    
+                        <div class="navicon">
+                        <div></div>
+                        </div>
+                        <a class="a3">¡Bienvenido!</a>
+                        <a href="{% url 'login' %}" style="text-decoration: none;" class="a2">Iniciar sesión</a>
+                    </nav>
+                </form>
+            {% endif %}
+        </div>
+        <div class="bubble">
+            <div class="bubble6">
+                <div class="tail">
+                </div>
+                <img href="{% url 'nuevo_paciente' %}" src="/static/assets/img/carta.png" style="background-repeat: no-repeat; display: block; margin: auto; margin: top 55px;">
+            </div>
+            <div class="bubble6">
+                <div class="tail">
+                </div>
+                <img href="{% url 'search_pacientes' %}" src="/static/assets/img/lupa.png" style="background-repeat: no-repeat; display: block; margin: auto; margin: top 55px;">
+            </div>
+            <div class="bubble6">
+                <div class="tail">
+                </div>
+                <img href="{% url 'upload' %}" src="/static/assets/img/archivo.png" style="background-repeat: no-repeat; display: block; margin: auto; margin: top 55px;">
+            </div>
+            <div class="bubble6">
+              <a class="secundario" style="text-decoration: none;" href="{% url 'nuevo_paciente' %}">Crear Paciente</a>
+            </div>
+			<div class="bubble6">
+				<form action="{% url 'search_pacientes' %}" method="get">
+                        <div>
+                            <br>
+                        <input style="border-radius: 50px; align-content: center; display: block; margin: auto; box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;" type="text" placeholder="Buscar paciente...  " name="q" value="{{request.GET.buscar}}" aria-label="Search">
+							<div>
+                                <button style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; border-radius: 5px; align-content: center; display: block; margin: auto;" type="submit">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                    </form>
+                    </form>
+            </div>
+            <div class="bubble6">
+              <a class="secundario" style="text-decoration: none;" href="{% url 'upload' %}">Subir Archivos</a>
+            </div>
+        </div>
+    </body>
+</html>

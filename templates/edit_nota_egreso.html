@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Editar Nota Egreso{% endblock title %}
+
+{% block content %}
+    {% if user.is_superuser %}
+      <div class="container2">
+        <div class="brand-logo-notaegreso"></div>
+        <div class="brand-title">Editar Nota egreso</div>
+        <div class="inputs">
+            <form action="updaterecord/" method="post">{% csrf_token %}
+                Fecha ingreso:<br>
+                <input name="fecha_ingreso" value="{{ nota.fecha_ingreso }}" type="date">
+                Especialidad Egreso:<br>
+                <input name="especialidad_egreso" value="{{ nota.especialidad_egreso }}">
+                Motivo egreso:<br>
+                <input name="motivo_egreso" value="{{ nota.motivo_egreso }}">
+                Envio:<br>
+                <input name="envio" value="{{ nota.envio }}">
+                Diagnóstico ingreso:<br>
+                <input name="diagnostico_ingreso" value="{{ nota.diagnostico_ingreso }}">
+                Diagnóstico egreso:<br>
+                <input name="diagnostico_egreso" value="{{ nota.diagnostico_egreso }}">
+                Resumen evolucion:<br>
+                <input name="resumen_evolucion" value="{{ nota.resumen_evolucion }}">
+                Problemas pendientes:<br>
+                <input name="problemas_pendientes" value="{{ nota.problemas_pendientes }}">
+                Plan tratamiento:<br>
+                <input name="plan_tratamiento" value="{{ nota.plan_tratamiento }}">
+                Recomendaciones:<br>
+                <input name="recomendaciones" value="{{ nota.recomendaciones }}">
+                Factores riesgo:<br>
+                <input name="factores_riesgo" value="{{ nota.factores_riesgo }}">
+                Pronóstico:<br>
+                <input name="pronostico" value="{{ nota.pronostico }}">
+                Diagnóstico defuncion:<br>
+                <input name="diagnostico_defuncion" value="{{ nota.diagnostico_defuncion }}">
+                Estado salud:<br>
+                <input name="estado_salud" value="{{ nota.estado_salud }}">
+                Peso:<br>
+                <input name="peso" value="{{ nota.peso }}" type="number" step=0.01 required>
+                Talla:<br>
+                <input name="talla" value="{{ nota.talla }}" type="number" step=0.01 required>
+                Temperatura:<br>
+                <input name="temperatura" value="{{ nota.temperatura }}" type="number" step=0.01 required>
+                Frecuencia respiratoria:<br>
+                <input name="frec_respiratoria" value="{{ nota.frec_respiratoria }}" type="number" step=0.01 required>
+                Frecuencia cardíaca:<br>
+                <input name="frec_cardiaca" value="{{ nota.frec_cardiaca }}" type="number" step=0.01 required>
+                Presión arterial:<br>
+                <input name="pres_arterial" value="{{ nota.pres_arterial }}">
+                imc:<br>
+                <input name="imc" value="{{ nota.imc }}" type="number" step=0.01 required>
+                Saturación:<br>
+                <input name="saturacion" value="{{ nota.saturacion }}" type="number" step=0.01 required>
+                glc capilar:<br>
+                <input name="glc_capilar" value="{{ nota.glc_capilar }}" type="number" step=0.01 required>
+                Diagnóstico final:<br>
+                <input name="diagnostico_final" value="{{ nota.diagnostico_final}}">
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+    {% else %}
+      <div class="container2"> 
+        <div class="brand-title">No tienes ese permiso</div>
+        <a class="a4" href="{% url 'users' %}" role="button" >Regresar</a></br>
+      </div>
+    {% endif %}
+{% endblock content %}

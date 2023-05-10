@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Paciente{% endblock title %}
+
+{% block content %}
+<div class="card bg-light mb-3">
+  <div class="alert alert-secondary" role="alert">
+    <h1>404 Page Not Found</h1>
+    <p>El contenido que busca no existe!</p>
+    <a href="{% url 'home' %}">Regresar a HomePage</a>
+    </div><br> 
+</div>
+{% endblock content %}

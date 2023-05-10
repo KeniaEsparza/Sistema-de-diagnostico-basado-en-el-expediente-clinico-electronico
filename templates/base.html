@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es"> 
+    <head>
+      <link href="/static/css/base.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="templatemo_header">
+            <h1 class="principal">Sistema de diagnóstico basado en el expediente clínico electrónico</h1>
+            <section>
+                <nav class="navMenu">
+                  <a href="{% url 'pacientes' %}">Pacientes <br> &#128300;</a>
+                  <a href="{% url 'users' %}">Médicos <br> &#127973;</a>
+                  <a href="{% url 'estadisticas' %}">Estadísticas <br> &#128246;</a>
+                  <a href="{% url 'modelos' %}">Diagnósticos <br> &#129298;</a>
+                  <a href="{% url 'entro' %}">Inició <br> &#127968;</a>
+                  <div class="dot"></div>
+                </nav>
+            </section>
+            {% if user.is_authenticated %}
+                <nav class="nav2">    
+                    <div class="navicon">
+                    <div></div>
+                    </div> 
+                    <a class="a3">Hola {{ user.username }}!</a>
+                    <a class="a2" style="text-decoration: none;" href="{% url 'password_change'%}">Cambiar contraseña</a> 
+                    <a class="a2" style="text-decoration: none;" href="{% url 'logout' %}">Cerrar sesión</a>
+                </nav>
+            {% else %}
+                <form> 
+                    <nav class="nav2">    
+                        <div class="navicon">
+                        <div></div>
+                        </div>
+                        <a class="a3">Bienvenido!</a>
+                        <a href="{% url 'login' %}" style="text-decoration: none;" class="a2">Iniciar sesión</a>
+                    </nav>
+                </form>
+            {% endif %}
+        </div>
+        <div class="container">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>

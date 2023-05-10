@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Nuevo Nota Egreso{% endblock title %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    <div class="container2">
+        <div class="brand-logo-notaegreso"></div>
+        <div class="brand-title">Registrar Datos de Nuevo Nota Egreso</div>
+        <div class="inputs">
+            <form action="addrecord/" method="post">{% csrf_token %} 
+
+                Fecha ingreso:<br>
+                <input name="fecha_ingreso" value="1900-01-01" type="date">
+                Fecha egreso:<br>
+                <input name="fecha_egreso" value="1900-01-01" type="date">
+                Especialidad Egreso:<br>
+                <input name="especialidad_egreso" value="">
+                Motivo egreso:<br>
+                <input name="motivo_egreso" value="">
+                Envio:<br>
+                <input name="envio" value="">
+                Diagnóstico ingreso:<br>
+                <input name="diagnostico_ingreso" value="">
+                Diagnóstico egreso:<br>
+                <input name="diagnostico_egreso" value="">
+                Resumen evolución:<br>
+                <input name="resumen_evolucion" value="">
+                Problemas pendientes:<br>
+                <input name="problemas_pendientes" value="">
+                Plan tratamiento:<br>
+                <input name="plan_tratamiento" value="">
+                Recomendaciones:<br>
+                <input name="recomendaciones" value="">
+                Factores riesgo:<br>
+                <input name="factores_riesgo" value="">
+                Pronóstico:<br>
+                <input name="pronostico" value="">
+                Diagnóstico defunción:<br>
+                <input name="diagnostico_defuncion" value="">
+                Estado salud:<br>
+                <input name="estado_salud" value="">
+                Peso:<br>
+                <input name="peso" value="00" type="number" step=0.01 required>
+                Talla:<br>
+                <input name="talla" value="00" type="number" step=0.01 required>
+                Temperatura:<br>
+                <input name="temperatura" value="00" type="number" step=0.01 required>
+                Frec respiratoria:<br>
+                <input name="frec_respiratoria" value="00" type="number" step=0.01 required>
+                Frec cardíaca:<br>
+                <input name="frec_cardiaca" value="00" type="number" step=0.01 required>
+                Pres arterial:<br>
+                <input name="pres_arterial" value="">
+                imc:<br>
+                <input name="imc" value="00" type="number" step=0.01 required>
+                Saturación:<br>
+                <input name="saturacion" value="00" type="number" step=0.01 required>
+                glc capilar:<br>
+                <input name="glc_capilar" value="00" type="number" step=0.01 required>
+                Diagnóstico final:<br>
+                <input name="diagnostico_final" value="">
+
+                <button class="button2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <br><a class="a4" href="{% url 'pacientes' %}" role="button" >Regresar</a></br>
+    </div>
+    {% else %}
+        <div class="container2"> 
+            <div class="brand-title">No tienes ese permiso</div>
+            <a class="a4" style="text-decoration: none;" href="{% url 'users' %}" role="button" >Regresar</a></br>
+        </div>
+    {% endif %}
+{% endblock content %}
